@@ -21,4 +21,4 @@ memory and resources from being freed for reuse.
 
 Answer 4: Shared pointers need additional memory and runtime overhead as they require a control block 
 and must update the reference count whenever ownership is copied or released. Neither unique nor raw 
-pointers need reference-count tracking and use less variables, memory, and runs faster.
+pointers need reference-count tracking and use less variables, memory, and run faster.
