@@ -197,7 +197,7 @@ SharedPtr<T> makeSharedBasic(Args&&... args) {
     return SharedPtr<T>(new T(std::forward<Args>(args)...)); //pass args using forward
 } // returns new SharedPtr<T> which manages new T
 
-// DONE Bonus: Shared Pointer using Embedded Control Block (+15%)
+// DONE Bonus: Create a Shared Pointer using Embedded Control Block (+15%)
 // Example usage: auto sPtr = makeShared<int>(5);
 template <typename T, typename... Args> SharedPtr<T> makeShared(Args&&... args) {
     // create control block containing T embedded inside it (not T*)
